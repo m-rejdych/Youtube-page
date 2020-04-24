@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/9e6d92b318.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Youtube page</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <header>
+        <div class="headerContentContainer">
+          <button class="headerButton">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+          <img
+            id="youtubeLogo"
+            src="./imgs/youtubelogo.png"
+            alt="youtube logo"
+          />
+        </div>
+        <div id="serachBar">
+          <input type="text" id="searchInput" value="Search" />
+          <button id="searchButton">
+            <i class="fas fa-search fa-lg"></i>
+          </button>
+        </div>
+        <div class="headerContentContainer">
+          <button class="headerButton">
+            <i class="fas fa-video fa-2x"></i>
+          </button>
+          <button class="headerButton"><i class="fas fa-th fa-2x"></i></button>
+          <button class="headerButton">
+            <i class="fas fa-bell fa-2x"></i>
+          </button>
+          <img calss="profileLogo" src="./imgs/profile-logo.png" />
+        </div>
+      </header>
+
+      <div id="mainContent">
+        <main>
+          <section id="videoSection">
+            <iframe
+              width="803"
+              height="502"
+              src="https://www.youtube.com/embed/V74l_zS1x8E"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div id="mainInfo">
+              <div id="titleHolder">
+                <h2 id="videoTitle">
+                  <strong>
+                    Contributing to Open Source Part I: The Easy Way
+                  </strong>
+                </h2>
+                <p id="viewsInfo">55 995 views 27 Feb 2014</p>
+              </div>
+              <div id="interactionsHolder">
+                <div id="likesHolder">
+                  <img id="likes" src="./imgs/video-likes.png" alt = 'likes' />
+                  <img id="dislikes" src="./imgs/video-dislikes.png" alt = 'dislikes'/>
+                </div>
+                <button id="shareButton">
+                  <i class="fas fa-share fa-lg"></i>
+                </button>
+                <h3 id="shareHeader">Share</h3>
+                <button id="saveButton"><i class="fas fa-download fa-lg"></i></button>
+                </button>
+                <h3 id="saveHeader">Save</h3>
+                <button id="optionsButton"><i class="fas fa-ellipsis-h fa-lg"></i></button>
+              </div>
+            </div>
+          </section>
+
+          <section id="descriptionSection">
+            <img id="channelLogo" src = './imgs/odin-logo.png' alt = 'channel logo'/>
+            <div id="descriptionHolder">
+              <h3 id="channelName">The Odin Project</h3>
+              <p id="description">
+                How do you contribute to open source? In this video, I'll
+                describe the easiest way to make a simple<br />contribution to
+                an open source project -- without using the command line, a text
+                editor, "forking a<br />repo", or even touching Git outside of
+                Github. I'll also describe what kinds of contributions open
+              </p>
+              <h4 id = 'showMore'>SHOW MORE</h4>
+            </div>
+            <button id="subscribeButton">SUBSCRIBE</button>
+          </section>
+
+          <section id="commentsSection">
+            <div id="commentsSorting">
+              <h4>15 comments</h4>
+              <button id="sortButton"><i class="fas fa-sort-amount-up fa-lg"></i></button>
+              <h3 id="sortHeader">SORT</h3>
+            </div>
+            <div id="comments">
+              <div id="yourCommentHolder" class='comment'>
+                <img calss="profileLogo" src = './imgs/profile-logo.png' />
+                <input type="text" id="yourComment" value = 'Leave a comment...' />
+              </div>
+              <div class="comment">
+                <img class="someoneLogo" src = './imgs/someone-logo.png' alt = 'account logo'/>
+                <div class="someoneCommentHolder">
+                  <h4 class="someoneName">Someone</h4>
+                  <p class="commentContent">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                  <div class="commentLikes">
+                    <button class="commentLikeButton"><i class="fas fa-thumbs-up fa-lg"></i></button>
+                    <button class="commentLikeButton"><i class="fas fa-thumbs-down fa-lg"></i></button>
+                    <h4 class="answer">Answer</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="comment">
+                <img class="someoneLogo" src = './imgs/someone-logo.png' alt = 'account logo'/>
+                <div class="someoneCommentHolder">
+                  <h4 class="someoneName">Someone</h4>
+                  <p class="commentContent">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                  <div class="commentLikes">
+                    <button class="commentLikeButton"><i class="fas fa-thumbs-up fa-lg"></i></button>
+                    <button class="commentLikeButton"><i class="fas fa-thumbs-down fa-lg"></i></button>
+                    <h4 class="answer">Answer</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="comment">
+                <img class="someoneLogo" src = './imgs/someone-logo.png' alt = 'account logo'/>
+                <div class="someoneCommentHolder">
+                  <h4 class="someoneName">Someone</h4>
+                  <p class="commentContent">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                  <div class="commentLikes">
+                    <button class="commentLikeButton"><i class="fas fa-thumbs-up fa-lg"></i></button>
+                    <button class="commentLikeButton"><i class="fas fa-thumbs-down fa-lg"></i></button>
+                    <h4 class="answer">Answer</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+    </div>
+
+    <aside>
+        <div id = 'nextVid'>
+            <div id = 'autoplayHolder'>
+                <h3 id = 'nextHeader'>Next</h3>
+                <div id = 'autoplay'>
+                    <h3 id = 'autoplayHeader'>AUTOPLAY</h3>
+                    <img id = 'autoplayButton' src = './imgs/autoplay.png'>
+                </div>
+            </div>
+            <div class = 'toWatchHolder'>
+                <img class = 'thumbnail' src = './imgs/thumbnail.png' >
+                <div class = 'toWatchInfo'>
+                    <h4 class = 'toWatchTitle'>Video Title</h4>
+                    <p class = 'toWatchAuthor'>Author</p>
+                    <p class = 'toWatchViews'>1 mln views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class = 'toWatchHolder'>
+            <img class = 'thumbnail' src = './imgs/thumbnail.png' >
+            <div class = 'toWatchInfo'>
+                <h4 class = 'toWatchTitle'>Video Title</h4>
+                <p class = 'toWatchAuthor'>Author</p>
+                <p class = 'toWatchViews'>1 mln views</p>
+            </div>
+        </div>
+
+        <div class = 'toWatchHolder'>
+            <img class = 'thumbnail' src = './imgs/thumbnail.png' >
+            <div class = 'toWatchInfo'>
+                <h4 class = 'toWatchTitle'>Video Title</h4>
+                <p class = 'toWatchAuthor'>Author</p>
+                <p class = 'toWatchViews'>1 mln views</p>
+            </div>
+        </div>
+
+        <div class = 'toWatchHolder'>
+            <img class = 'thumbnail' src = './imgs/thumbnail.png' >
+            <div class = 'toWatchInfo'>
+                <h4 class = 'toWatchTitle'>Video Title</h4>
+                <p class = 'toWatchAuthor'>Author</p>
+                <p class = 'toWatchViews'>1 mln views</p>
+            </div>
+        </div>
+
+        <div class = 'toWatchHolder'>
+            <img class = 'thumbnail' src = './imgs/thumbnail.png' >
+            <div class = 'toWatchInfo'>
+                <h4 class = 'toWatchTitle'>Video Title</h4>
+                <p class = 'toWatchAuthor'>Author</p>
+                <p class = 'toWatchViews'>1 mln views</p>
+            </div>
+        </div>
+        
+        <div class = 'toWatchHolder'>
+            <img class = 'thumbnail' src = './imgs/thumbnail.png' >
+            <div class = 'toWatchInfo'>
+                <h4 class = 'toWatchTitle'>Video Title</h4>
+                <p class = 'toWatchAuthor'>Author</p>
+                <p class = 'toWatchViews'>1 mln views</p>
+            </div>
+        </div>
+    </aside>
+    </div>
+  </body>
+</html>
